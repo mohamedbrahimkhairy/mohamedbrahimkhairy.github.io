@@ -1,6 +1,6 @@
 # Hi 👋, My name is Mohamed Brahim Khairy
 
-### Graphics & Multimedia Software Student 💻
+### I am computing faculty Student 💻
 
 ✨ Design, creativity & software learning journey
 
@@ -28,3 +28,4 @@
   <a href="#" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="youtube" height="30" width="40" /></a>
   <a href="#" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="facebook" height="30" width="40" /></a>
 </p>
+
