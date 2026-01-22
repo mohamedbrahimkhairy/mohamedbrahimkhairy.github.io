@@ -7,33 +7,41 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* ১. ইন্ট্রো রিমুভ এবং লেআউট ফিক্স */
 			#intro { display: none !important; } 
 			#header { padding: 2em 0 !important; margin: 0 !important; }
 			#navPanel, #nav { margin-top: 0 !important; }
 
+			/* ২. প্রোফাইল ও ইমেজ সাইজ কন্ট্রোল */
 			.profile-top-section {
 				display: flex;
-				align-items: flex-start;
+				align-items: center;
 				gap: 40px;
 				margin-bottom: 30px;
-				padding: 20px 0;
+				padding: 30px;
+				background: #f4f4f4;
+				border-radius: 15px;
 			}
 			
+			/* প্রোফাইল ছবির সাইজ এবং গোল শেপ ঠিক করা হয়েছে */
 			.profile-top-section img {
-				width: 100% !important;
-				max-width: 400px !important;
-				height: auto;
-				border-radius: 10px;
-				box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+				width: 300px !important; 
+				height: 300px !important; 
+				object-fit: cover; 
+				border-radius: 50%; 
+				border: 6px solid #212931;
+				box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 			}
 
 			.welcome-box h2 {
-				font-size: 2.5em !important;
+				font-size: 2.2em !important;
 				line-height: 1.2;
 				font-weight: 900;
 				color: #212931;
+				margin: 0;
 			}
 
+			/* ৩. ইনফো কার্ড এবং রিফ্লেকশন বক্স ডিজাইন */
 			.info-card {
 				text-align: left;
 				background: #ffffff;
@@ -41,34 +49,39 @@
 				border-radius: 10px;
 				border: 1px solid #ddd;
 				margin-bottom: 25px;
+				box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
 			}
 
 			.info-card h3 {
 				border-bottom: 3px solid #212931;
 				display: inline-block;
 				margin-bottom: 15px;
+				text-transform: uppercase;
 			}
 
 			.reflection-box {
 				margin-top: 20px;
-				padding: 15px;
+				padding: 20px;
 				background: #f9f9f9;
-				border-left: 5px solid #212931;
+				border-left: 6px solid #212931;
 				margin-bottom: 15px;
+				font-style: italic;
 			}
 
 			.assignment-img {
 				width: 100%;
-				max-width: 700px;
-				border-radius: 8px;
-				margin: 15px 0;
-				box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+				max-width: 600px;
+				border-radius: 10px;
+				margin: 20px auto;
+				display: block;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 			}
 
 			hr { margin: 40px 0; }
 
 			@media screen and (max-width: 980px) {
-				.profile-top-section { flex-direction: column; }
+				.profile-top-section { flex-direction: column; text-align: center; }
+				.profile-top-section img { width: 250px !important; height: 250px !important; }
 			}
 		</style>
 	</head>
@@ -88,47 +101,61 @@
 
 					<div class="info-card">
 						<h3>About Me</h3>
-						<p>I am a dedicated Computing student at Universiti Teknologi Malaysia (UTM). I am passionate about technology, problem-solving, and developing efficient management systems.</p>
+						<p>I am a highly motivated student at Universiti Teknologi Malaysia (UTM) pursuing a degree in Computing. I am passionate about understanding Information Systems and how technology drives modern industry. My focus is on developing practical skills in software development and system management to solve real-world problems.</p>
 					</div>
 
 					<div class="info-card">
-						<h3>Education & Identity</h3>
+						<h3>Core: Education & Identity</h3>
 						<p><strong>University:</strong> Universiti Teknologi Malaysia (UTM)<br />
 						<strong>Matric Number:</strong> A25CS4015<br />
-						<strong>Faculty:</strong> Faculty of Computing</p>
+						<strong>Degree:</strong> Bachelor of Computer Science</p>
 					</div>
 
 					<div class="info-card">
 						<h3 style="display: block;">Academic Assignments & Reflections</h3>
 
 						<div class="assignment-block">
-							<h4 style="color: #212931;">1. Industrial Talk 2: Academic Writing (Assignment 3)</h4>
+							<h4 style="color: #212931;">1. Reflection for Poster: PPG Industrial Talk 1 (Assignment 2)</h4>
+							<img src="PHOTO-2026-01-14-12-41-02.jpg" alt="PPG Industrial Talk Poster" class="assignment-img">
+							<div class="reflection-box">
+								<p><strong>Reflection:</strong> This session was eye-opening as it bridged the gap between academic theory and industrial practice. I learned how PPG utilizes Data Analytics and Multi-Cloud infrastructures (AWS/Azure) to manage global operations. Understanding the SAP process flow helped me realize how ICT acts as a strategic driver for business efficiency rather than just technical support.</p>
+							</div>
+						</div>
+
+						<hr />
+
+						<div class="assignment-block">
+							<h4 style="color: #212931;">2. Building the CORE Foundation (Assignment 3)</h4>
 							<p><a href="ASSIGMENT 3.pdf" target="_blank" class="button icon solid fa-file-pdf">View Assignment 3 PDF</a></p>
 							<div class="reflection-box">
-								<p><strong>Reflection:</strong> This talk provided deep insights into the structure of professional academic writing and its importance in the computer science field. I learned how to document technical processes clearly and concisely.</p>
+								<p><strong>Reflection:</strong> Working on this assignment taught me that a successful career in Computer Science requires a balanced foundation of technical mastery and soft skills. I gained a better understanding of the Software Development Life Cycle (SDLC) and how structured academic writing is essential for documenting and presenting complex technical ideas clearly.</p>
 							</div>
 						</div>
 
 						<hr />
 
 						<div class="assignment-block">
-							<h4 style="color: #212931;">2. Design Thinking: Building Maintenance Management System (BMMS)</h4>
+							<h4 style="color: #212931;">3. Technology Information Systems & Industrial Visit (Assignment 4)</h4>
+							<p><a href="assigment4.pdf" target="_blank" class="button icon solid fa-file-pdf">View Assignment 4 PDF</a></p>
+							<div style="margin: 20px 0;">
+								<p><strong>Watch the UTM Open Day Visit:</strong></p>
+								<a href="https://youtu.be/WyJiP9KDZoo" target="_blank" class="button primary">Watch on YouTube</a>
+							</div>
+							<div class="reflection-box">
+								<p><strong>Reflection:</strong> My visit to UTM Digital during the Open Day was my first real-world exposure to smart campus infrastructure. I saw how UTM Smart services and AI applications are shaping our academic environment. It sparked my interest in how large-scale digital resources can be managed effectively to support thousands of users simultaneously.</p>
+							</div>
+						</div>
+
+						<hr />
+
+						<div class="assignment-block">
+							<h4 style="color: #212931;">4. Design Thinking: Building Maintenance Management System (BMMS)</h4>
 							<div style="margin-bottom: 20px;">
 								<a href="DESIGN THINKING PROJECT REPORT .pdf" target="_blank" class="button icon solid fa-file-pdf" style="margin-right: 10px;">View Project Report</a>
-								<a href="Design Thinking Project - Building Maintenance Management System (BMMS).pdf" target="_blank" class="button icon solid fa-file-pdf">View BMMS Details</a>
+								<a href="https://youtu.be/p-7xtBtBoFk" target="_blank" class="button icon brands fa-youtube" style="background-color: #ff0000; color: white;">Watch BMMS Prototype</a>
 							</div>
 							<div class="reflection-box">
-								<p><strong>Reflection:</strong> In this project, we applied design thinking methodologies to solve real-world problems in building maintenance. It helped me understand the user-centric approach to system design, ensuring that the software truly meets the needs of the maintenance staff and residents.</p>
-							</div>
-						</div>
-
-						<hr />
-
-						<div class="assignment-block">
-							<h4 style="color: #212931;">3. Reflection for Assignment 4</h4>
-							<p><a href="assigment4.pdf" target="_blank" class="button icon solid fa-file-pdf">View Assignment 4 PDF</a></p>
-							<div class="reflection-box">
-								<p><strong>Reflection:</strong> Through Assignment 4, I further refined my technical documentation and analytical skills. This task allowed me to apply the core concepts I've learned throughout the semester into a comprehensive final report.</p>
+								<p><strong>Reflection:</strong> In the Building Maintenance Management System project, we used the 'Design Thinking' approach to solve real maintenance challenges. By identifying user pain points, we designed a system that streamlines reporting and repair processes. Watching our prototype come to life showed me the power of user-centric design in creating meaningful software solutions.</p>
 							</div>
 						</div>
 
@@ -140,9 +167,9 @@
 			<footer id="footer">
 				<section class="split contact">
 					<section>
-						<h3>Email</h3>
-						<p><strong>Academic:</strong> <a href="mailto:brahimkhairy@graduate.utm.my">brahimkhairy@graduate.utm.my</a><br>
-						<strong>Personal:</strong> <a href="mailto:mohamedbrahimkhairy@gmail.com">mohamedbrahimkhairy@gmail.com</a></p>
+						<h3>Contact Me</h3>
+						<p><strong>Academic Email:</strong> <a href="mailto:brahimkhairy@graduate.utm.my">brahimkhairy@graduate.utm.my</a><br>
+						<strong>Personal Email:</strong> <a href="mailto:mohamedbrahimkhairy@gmail.com">mohamedbrahimkhairy@gmail.com</a></p>
 					</section>
 				</section>
 			</footer>
@@ -153,4 +180,3 @@
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
-
